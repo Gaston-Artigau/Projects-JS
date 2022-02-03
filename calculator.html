@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="/css/normalize.css">
+    <script src="/dev/js/Display.js" type="text/javascript"></script>
+    <script src="/dev/js/Calculadora.js" type="text/javascript"></script>
+    <script src="/dev/js/index.js" type="text/javascript" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+</head>
+
+<body class="body">
+    <header class='header'>
+        <h1 class="logo"><a href="/index.html">Projects JS</a></h1>
+        <nav class="navbar">
+            <li><a href="/calculator.html">Calculadora</a></li>
+            <li><a href="imc.html">Calculadora IMC</a></li>
+            <li><a href="quotes.html">Cotización de divisas</a></li>
+            <li><a href="/contact.html">Contacto</a></li>
+        </nav>
+    </header>
+
+    <main class='main'>
+        <section class='section1'>
+            <h1 class="section1__title">Calculadora Básica</h1>
+            <div id="section1__show" class="section1__show">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+
+            <div class="section1__container">
+
+                <button onclick="display.deleteAll()" id="clear" class="section1__keys clear">C</button>
+                <button onclick="display.delete()" class="section1__keys">&larr;</button>
+                <button id="percent" class="section1__keys percent operators" value="percent">%</button>
+                <button id="divide" class="section1__keys divide operators" value="divide">/</button>
+                <button id="seven" class="section1__keys seven numbers">7</button>
+                <button id="eight" class="section1__keys eight numbers">8</button>
+                <button id="nine" class="section1__keys nine numbers">9</button>
+                <button id="multiply" class="section1__keys multiply operators" value="multiply">X</button>
+                <button id="four" class="section1__keys four numbers">4</button>
+                <button id="five" class="section1__keys five numbers">5</button>
+                <button id="six" class="section1__keys six numbers">6</button>
+                <button id="subtract" class="section1__keys subtract operators" value="subtract">-</button>
+                <button id="one" class="section1__keys one numbers">1</button>
+                <button id="two" class="section1__keys two numbers">2</button>
+                <button id="three" class="section1__keys three numbers">3</button>
+                <button id="sum" class="section1__keys sum operators" value="sum">+</button>
+                <button id="zero" class="section1__keys zero numbers">0</button>
+                <button id="dot" class="section1__keys dot numbers">.</button>
+                <button id="equal" class="section1__keys equal operators" value="equal">=</button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="p-footer"><a href="https://gaston-artigau.netlify.app/" target="_blank">&copy; Designed by Gaston Artigau</a></p>
+    </footer>
+</body>
+
+</html>

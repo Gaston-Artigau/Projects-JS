@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de divisas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="/css/normalize.css">
+    <script src="dev/js/quotes.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/assets/icons/site.webmanifest"> -->
+</head>
+
+<body class="body">
+
+    <header class='header'>
+        <h1 class="logo"><a href="/index.html">Projects JS</a></h1>
+        <nav class="navbar">
+            <li><a href="/calculator.html">Calculadora</a></li>
+            <li><a href="imc.html">Calculadora IMC</a></li>
+            <li><a href="quotes.html">Cotización de divisas</a></li>
+            <li><a href="/contact.html">Contacto</a></li>
+        </nav>
+    </header>
+
+    <main class="main-quotes">
+        <section class="quotes-section">
+
+            <h1 class="title__quotes" id="title__quotes">Cotizaciones actualizadas de Argentina</h1>
+
+            <h2 class="title-dolar">Cotización del dólar</h2>
+
+            <div class="container container__dolar">
+
+                <div>
+                    <h3 class="subtitle-dolar">Cotización del dólar Oficial</h3>
+                    <table class="dolar-oficial" id="dolar-oficial" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-dolar">Cotización del dólar Blue</h3>
+                    <table class="dolar-blue" id="dolar-blue" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-dolar">Cotizacion del dolar CCL</h3>
+                    <table class="dolar-ccl" id="dolar-ccl" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-dolar">Cotización del dólar Turista</h3>
+                    <table class="dolar-turista" id="dolar-turista" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-dolar">Cotización del dólar Bolsa</h3>
+                    <table class="dolar-bolsa" id="dolar-bolsa" border="1"></table>
+                </div>
+
+            </div>
+
+            <h2 class="title-euro">Cotización del Euro</h2>
+
+            <div class="container container__euro" id="container__euro">
+                <h3 class="subtitle-euro">Cotización del euro Oficial</h3>
+                <table class="euro" id="euro" border="1"></table>
+            </div>
+
+            <h2 class="title-real">Cotización del Real Brasileño</h2>
+
+            <div class="container container__real" id="container__real">
+                <h3 class="subtitle-real">Cotización del Real Oficial</h3>
+                <table class="real" id="real" border="1"></table>
+            </div>
+
+            <h2 class="subtitle__quotes" id="subtitle__quotes">Otros Datos</h2>
+
+            <h2 class="title-ev">Evolución del precio de las monedas</h2>
+
+            <div class="container container__evolucion" id="container__evolucion">
+
+                <h3 class="subtitle-ev">Evolución del dólar Oficial</h3>
+                <div class="ev-dolar_oficial" id="ev-dolar_oficial"></div>
+
+                <h3 class="subtitle-ev">Evolución del dólar Blue</h3>
+                <div class="ev-dolar_blue" id="ev-dolar_blue"></div>
+
+                <h3 class="subtitle-ev">Evolución del real Oficial</h3>
+                <div class="ev-real" id="ev-real"></div>
+
+                <h3 class="subtitle-ev">Evolución del euro Oficial</h3>
+                <div class="ev-euro" id="ev-euro"></div>
+
+            </div>
+
+            <h2 class="title-others">Reservas, circulación y Riesgo País</h2>
+
+            <div class="container container__others" id="container__others">
+
+                <div>
+                    <h3 class="subtitle-others">Reservas del BCRA en dólares</h3>
+                    <table class="reservas" id="reservas" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-others">Total pesos en Circulación</h3>
+                    <table class="circulacion" id="circulacion" border="1"></table>
+                </div>
+
+                <div>
+                    <h3 class="subtitle-others">Riesgo País</h3>
+                    <table class="riesgo-pais" id="riesgo-pais" border="1"></table>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="p-footer"><a href="https://gaston-artigau.netlify.app/" target="_blank">&copy; Designed by Gaston Artigau</a></p>
+    </footer>
+</body>
+
+</html>
