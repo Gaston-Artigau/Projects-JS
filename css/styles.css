@@ -24,15 +24,15 @@ a {
     color: rgba(252, 252, 252, 0.719);
 }
 
-header {
-    display: flex;
-    width: 100%;
-    height: 85px;
-    padding-left: 10px;
-    padding-right: 200px;
-    justify-content: space-between;
+.navbar {
     background-color: rgb(18, 35, 58);
     box-shadow: 0 10px 20px rgb(9, 15, 27);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 main {
@@ -43,33 +43,123 @@ main {
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    flex-direction: start;
-    margin-right: 30px;
-    cursor: pointer;
+    /* font-size: 28px;
+font-weight: bold;
+flex-direction: start;
+margin-right: 30px;
+cursor: pointer; */
+    width: 180px;
+    height: 50px;
+    margin: 0 30px 0 20px;
+    min-width: 80px;
+    flex-wrap: none;
+    font-size: 32px;
 }
 
-.navbar {
+.ul {
+    /* justify-content: flex-end; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
-    gap: 80px;
+    gap: 35px;
+    margin-right: 90px;
+    list-style: none;
 }
 
-.navbar li {
+.ul a {
+    position: relative;
+}
+
+.ul li {
     list-style: none;
     cursor: pointer;
 }
 
-.navbar li a {
+.ul li a {
     text-decoration: none;
     color: rgba(252, 252, 252, 0.719);
     font-weight: bold;
+    font-size: 16px;
 }
 
-.navbar li a:hover {
+.ul li a:hover {
     color: rgba(255, 138, 138, 0.719);
+}
+
+
+/* responsive menu */
+
+.btn__menu {
+    margin-right: 30px;
+    font-size: 28px;
+    color: rgba(252, 252, 252, 0.719);
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 982px) {
+    .logo {
+        width: 180px;
+        height: 50px;
+    }
+    .ul {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .btn__menu {
+        display: block;
+    }
+    .ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 65px;
+        background: rgb(44, 65, 92);
+        z-index: 10;
+        left: -100%;
+        text-align: center;
+        transition: all .8s;
+        flex-direction: column;
+    }
+    .navbar {
+        height: 80px;
+    }
+    .navbar__link {
+        font-size: 27px;
+        color: rgb(173, 173, 173)
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .logo {
+        width: 180px;
+        font-size: 30px;
+    }
+    .navbar__link:hover {
+        color: rgb(224, 224, 224);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .navbar {
+        height: 100px;
+    }
 }
 
 
@@ -134,6 +224,90 @@ main {
     color: white;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 720px) {
+    body {
+        max-width: 95%;
+        justify-content: center;
+    }
+    .main-index {
+        width: 90%;
+    }
+    .title-inicio {
+        font-size: 30px;
+        margin: 50px 0 40px 0;
+    }
+    .subtitle-inicio {
+        margin: 50px 0 40px 0;
+        font-size: 24px;
+    }
+    .container-projects {
+        margin: 40px 0 30px 0;
+    }
+    .img-index {
+        width: 400px;
+        height: 210px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .title-projects {
+        margin-top: 70px;
+        font-size: 28px;
+    }
+    .description-index {
+        width: 400px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-index {
+        width: 95%;
+    }
+    .title-inicio {
+        font-size: 26px;
+        margin: 30px 0 25px 0;
+    }
+    .subtitle-inicio {
+        margin: 30px 0 25px 0;
+        font-size: 20px;
+    }
+    .container-projects {
+        margin: 30px 0 15px 0;
+    }
+    .img-index {
+        width: 300px;
+        height: 170px;
+    }
+    .title-projects {
+        margin-top: 70px;
+        font-size: 24px;
+    }
+    .description-index {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .title-inicio {
+        font-size: 20px;
+    }
+    .subtitle-inicio {
+        font-size: 16px;
+    }
+    .img-index {
+        display: none;
+        visibility: hidden;
+    }
+    .title-projects {
+        margin-top: 70px;
+        font-size: 16px;
+    }
+    .description-index {
+        font-size: 12px;
+        max-width: 80%;
+    }
 }
 
 

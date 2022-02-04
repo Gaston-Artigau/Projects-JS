@@ -222,12 +222,12 @@ fetch(`${api_URL}/api/bcra/reservas`)
 fetch(`${api_URL}/api/bcra/circulante`)
     .then((response) => response.json())
     .then((quotes) => {
-        console.log(quotes.fecha)
-        date = quotes.fecha
-            // const regEx = /(?:[01]\d|2[0-3]):(?:[0-5]\d):(?:[0-5]\d)/
-        const regEx2 = /\s(?:[01]\d|2[0-3])/
-        const hour = date.replace(regEx2, ` 04`)
-        console.log(hour)
+        // console.log(quotes.fecha)
+        // date = quotes.fecha
+        // const regEx = /(?:[01]\d|2[0-3]):(?:[0-5]\d):(?:[0-5]\d)/
+        // const regEx2 = /\s(?:[01]\d|2[0-3])/
+        // const hour = date.replace(regEx2, ` 04`)
+        // console.log(hour)
         const tpl = `<thead> <tr> <th>Ultima actualización</th> <th>Valor</th> <th>Moneda</th> </tr> </thead> <tbody> <tr> <td>${quotes.fecha}</td> <td>$${quotes.valor}</td> <td>${quotes.moneda}</td> </tr> </tbody>`
         circulacion.innerHTML = tpl
     })

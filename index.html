@@ -8,6 +8,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
@@ -17,12 +18,21 @@
 
 <body class="body-index">
     <header class='header'>
-        <h1 class="logo"><a href="/index.html">Projects JS</a></h1>
+
         <nav class="navbar">
-            <li><a href="/calculator.html">Calculadora</a></li>
-            <li><a href="imc.html">Calculadora IMC</a></li>
-            <li><a href="quotes.html">Cotización de divisas</a></li>
-            <li><a href="/contact.html">Contacto</a></li>
+            <h1 class="logo"><a href="/index.html">Projects JS</a></h1>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="btn__menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="ul">
+                <li><a href="/calculator.html" class="navbar__link">Calculadora</a></li>
+                <li><a href="imc.html" class="navbar__link">Calculadora IMC</a></li>
+                <li><a href="quotes.html" class="navbar__link">Cotización de divisas</a></li>
+                <li><a href="/contact.html" class="navbar__link">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
