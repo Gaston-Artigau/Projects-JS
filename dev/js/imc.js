@@ -25,7 +25,7 @@ function submitForm(e) {
         show.appendChild(fragment)
     }
     if (imc >= 18.5 && imc <= 24.9) {
-        texto.textContent = `Tu peso es el ideal: tu IMC es ${imc.toFixed(2)} y esta entre los estanderes correctos`
+        texto.textContent = `Tu peso es el ideal: tu IMC es ${imc.toFixed(2)} y esta en los estanderes correctos`
         texto.classList.add('text-show__normal')
         fragment.appendChild(texto)
         show.appendChild(fragment)
