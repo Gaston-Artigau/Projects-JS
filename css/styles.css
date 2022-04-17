@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(55, 66, 80);
+    --background: rgb(12, 32, 58);
 }
 
 html {
@@ -25,7 +25,7 @@ a {
 }
 
 .navbar {
-    background-color: rgb(18, 35, 58);
+    background-color: rgb(18, 31, 48);
     box-shadow: 0 10px 20px rgb(9, 15, 27);
     height: 90px;
     display: flex;
@@ -43,11 +43,6 @@ main {
 }
 
 .logo {
-    /* font-size: 28px;
-font-weight: bold;
-flex-direction: start;
-margin-right: 30px;
-cursor: pointer; */
     width: 180px;
     height: 50px;
     margin: 0 30px 0 20px;
@@ -57,7 +52,6 @@ cursor: pointer; */
 }
 
 .ul {
-    /* justify-content: flex-end; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -83,7 +77,7 @@ cursor: pointer; */
 }
 
 .ul li a:hover {
-    color: rgba(255, 138, 138, 0.719);
+    color: rgb(9, 174, 224);
 }
 
 
@@ -166,14 +160,14 @@ cursor: pointer; */
 /* Inicio */
 
 .body-index {
-    background-color: rgb(44, 65, 92);
+    background-color: rgb(11, 41, 83);
 }
 
 .main-index {
     display: grid;
     justify-content: center;
     width: 70%;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 
 .title-inicio {
@@ -330,7 +324,9 @@ cursor: pointer; */
 .section1__title {
     font-size: 36px;
     color: #29dfff;
-    margin: 40px 0 50px 0;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .section1__show {
@@ -907,11 +903,11 @@ cursor: pointer; */
 }
 
 .p-footer a {
-    color: rgb(103, 255, 83);
+    color: rgb(2, 238, 255);
 }
 
 .p-footer a:hover {
-    color: rgb(255, 81, 81);
+    color: rgb(221, 166, 16);
 }
 
 @media (max-width: 270px) {
