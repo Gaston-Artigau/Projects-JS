@@ -52,15 +52,16 @@
         </nav>
     </header>
 
-    <main class='main'>
-        <section class='section1'>
-            <h1 class="section1__title">Calculadora</h1>
-            <div id="section1__show" class="section1__show">
+    <main class='main' style='display: inline;'>
+        <h1 class="section1__title" style="text-align: center;">Calculadora</h1>
+        <section class='section1' style='justify-content: center;'>
+            
+            <div id="section1__show" class="section1__show" style="border: 3px solid #000;">
                 <div id="valor-anterior"></div>
                 <div id="valor-actual"></div>
             </div>
 
-            <div class="section1__container">
+            <div class="section1__container" style="border: 3px solid #000;">
 
                 <button onclick="display.deleteAll()" id="clear" class="section1__keys clear">C</button>
                 <button onclick="display.delete()" class="section1__keys">&larr;</button>
