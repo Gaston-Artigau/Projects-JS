@@ -34,11 +34,11 @@
 // }
 
 
-import express from '../../node_modules/express/index';
-// var express = require('express')
-import cors from '../../node_modules/cors/lib/index';
-// var cors = require('cors')
+// import express from '../../node_modules/express/index';
+// // var express = require('express')
+// import cors from '../../node_modules/cors/lib/index';
+// // var cors = require('cors')
 
-const app = express()
+// const app = express()
 
-app.use(cors())
+// app.use(cors())

@@ -1,4 +1,4 @@
-const api_URL = 'https://api-dolar-argentina.herokuapp.com'
+const api_URL = ' https://cors-solucion.herokuapp.com/https://api-dolar-argentina.herokuapp.com'
 
 const container_dolar = document.getElementById('container__dolar');
 const dolar_oficial = document.getElementById('dolar-oficial');
