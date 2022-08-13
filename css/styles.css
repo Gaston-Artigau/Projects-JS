@@ -19,6 +19,14 @@ body {
     color: rgba(252, 252, 252, 0.719);
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(136, 159, 223);
+    border-radius: 6px;
+}
+
 a {
     text-decoration: none;
     color: rgba(252, 252, 252, 0.719);
@@ -27,7 +35,7 @@ a {
 .navbar {
     background-color: rgb(18, 31, 48);
     box-shadow: 0 10px 20px rgb(9, 15, 27);
-    height: 90px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -191,10 +199,11 @@ main {
     display: flex;
     width: 550px;
     height: 280px;
-    border: 3px solid rgb(0, 0, 0);
+    border: px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 2px 3px 8px 2px rgb(20, 20, 20);
 }
 
 .title-projects {
@@ -209,7 +218,7 @@ main {
 }
 
 .title-projects a:hover {
-    color: rgb(194, 194, 194);
+    color: rgb(153, 153, 153);
 }
 
 .description-index {
@@ -345,6 +354,8 @@ main {
     text-align: right;
     padding: 16px;
     word-break: break-all;
+    border: 2.5px solid rgb(10, 10, 10);
+    box-shadow: 2px 4px 12px rgb(15, 15, 15);
 }
 
 .section1__container {
@@ -354,10 +365,12 @@ main {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     background-color: rgb(65, 127, 143);
-    /* background: linear-gradient(to top, rgb(65, 127, 143), rgb(27, 52, 58)); */
+    background: linear-gradient(to top, rgb(26 61 70), rgb(10 67 80));
     padding: 10px;
     gap: 5px;
     border-radius: 0 0 12px 12px;
+    border: 2.5px solid rgb(10, 10, 10);
+    box-shadow: 2px 4px 12px rgb(15, 15, 15);
 }
 
 .section1__keys {
@@ -369,6 +382,7 @@ main {
     border-radius: 50px;
     border: none;
     font-size: 16px;
+    transition: all .3s;
 }
 
 .section1__keys:hover {
@@ -456,6 +470,7 @@ main {
     border: none;
     margin-left: 10px;
     padding: 3px;
+    background-color: #e2e2e2;
 }
 
 #imc__submit {
@@ -473,6 +488,7 @@ main {
     justify-content: center;
     border: none;
     text-transform: uppercase;
+    transition: all .3s;
 }
 
 #imc__submit:hover {
@@ -891,7 +907,6 @@ main {
     font-weight: bold;
     font-size: 17px;
     bottom: 0;
-    position: fixed;
 }
 
 .p-footer {
